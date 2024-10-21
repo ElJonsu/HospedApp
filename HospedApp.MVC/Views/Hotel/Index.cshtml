@@ -7,7 +7,7 @@
 <div>
     <br>
     <div class=" text-center">
-        <h1>Buscar hoteles</h1>
+        <h1>Lista de hoteles</h1>
     </div>
     <br>
 
@@ -21,7 +21,7 @@
         }
         else
         {
-            <h3>Lista de hoteles</h3>
+
             <div>
                 <table class="table table-responsive ">
                     <thead>
@@ -29,7 +29,7 @@
                             <th scope="col">Hotel</th>
                             <th scope="col">Email</th>
                             <th scope="col">Sitio Web</th>
-                            <th scope="col">Estrella</th>
+                            <th scope="col">Estrellas</th>
                             <th scope="col">Acción</th>
                         </tr>
                     </thead>
@@ -43,7 +43,7 @@
                                 <td>@hotel.Star</td>
                                 <td>
                                     <a asp-action="Modify" asp-route-id="@hotel.IdHotel">Modificar</a>
-                                    <a asp-action="Detail" asp-route-id="@hotel.IdHotel">Detalle</a>
+                                    <a asp-action="Detail" asp-route-id="@hotel.IdHotel">Detalles</a>
                                 </td>
                             </tr>
                         }
